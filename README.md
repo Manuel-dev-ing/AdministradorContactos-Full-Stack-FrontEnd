@@ -44,4 +44,46 @@ Este frontend se comunica con una **API REST desarrollada en ASP.NET Core** que 
 ### 🌐 Comunicación
 - **Fetch API** – Para consumir la API REST desarrollada en ASP.NET Core.
 
+## 🚀 Instalación y Ejecución Local
+Sigue estos pasos para clonar, instalar y ejecutar el frontend de la aplicación en tu entorno local:
 
+### 1. Clona el repositorio
+```
+git clone https://github.com/Manuel-dev-ing/AdministradorContactos-Full-Stack-FrontEnd.git
+
+```
+### 2. Instala las dependencias
+Asegúrate de tener Node.js (v16 o superior recomendado) y npm o yarn instalados
+Con npm:
+```
+  npm install 
+```
+Con Yarn:
+```
+  yarn install
+```
+### 3. Ejecuta la aplicación en modo desarrollo
+Con npm:
+```
+  npm run dev
+```
+Con Yarn: 
+```
+  yarn dev
+
+```
+Esto iniciará el servidor de desarrollo. Abre tu navegador y visita:
+
+```
+  http://localhost:5173
+
+```
+
+## Licencia
+
+Administrador de Contactos es [MIT licensed](./LICENSE).
+
+## Contacto
+**Nombre:** Manuel Tamayo Montero.
+
+**Correo:** manueltamayo9765@gmail.com

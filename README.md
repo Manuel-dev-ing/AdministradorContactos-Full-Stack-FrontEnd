@@ -1,54 +1,47 @@
-# React + TypeScript + Vite
+# 📇 Administrador de Contactos – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto representa el **frontend** de una aplicación web full stack para la gestión de contactos. Permite al usuario **crear, editar, eliminar, listar y agrupar contactos**, así como **visualizar los contactos asociados a cada grupo**. La interfaz es moderna, responsiva y construida con tecnologías actuales del ecosistema React.
 
-Currently, two official plugins are available:
+El frontend está desarrollado con:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** y **TypeScript** – Para construir interfaces de usuario robustas y tipadas.
+- **Vite** – Herramienta de desarrollo rápida y ligera.
+- **Zustand** – Manejo de estado global simple y eficiente.
+- **Zod** – Validación de formularios y estructuras de datos.
+- **CSS** y **HTML** – Para el diseño visual y estructura del contenido.
 
-## Expanding the ESLint configuration
+Este frontend se comunica con una **API REST desarrollada en ASP.NET Core** que actúa como backend del sistema.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> ⚠️ Este repositorio incluye únicamente la parte de cliente. La lógica del servidor y la persistencia de datos están en un repositorio backend separado.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## ⚙️ Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 📋 **Listado de contactos**
+- ➕ **Creación de nuevos contactos**
+- ✏️ **Edición de contactos existentes**
+- ❌ **Eliminación de contactos**
+- 🧑‍🤝‍🧑 **Agrupación de contactos por grupo**.
+- 👁️ **Visualización de contactos por grupo específico**.
+- ⚡ **Interacción en tiempo real** con la API REST (creación, actualización y borrado sin recarga de página).
+- ✅ **Validación de datos** con **Zod** para asegurar integridad en los formularios.
+- 💾 **Manejo de estado global** con **Zustand**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tecnologías Usadas
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 🧑‍💻 Core
+- **[React](https://reactjs.org/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[Vite](https://vitejs.dev/)**
+
+### ⚙️ Estado y Validación
+- **[Zustand](https://zustand-demo.pmnd.rs/)**
+- **[Zod](https://zod.dev/)**
+
+### 🎨 Estilos y UI
+- **CSS**
+- **HTML5**
+
+### 🌐 Comunicación
+- **Fetch API** – Para consumir la API REST desarrollada en ASP.NET Core.
+
+
